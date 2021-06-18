@@ -1,0 +1,68 @@
+
+h1{
+  text-align: center;
+  color: black;
+}
+body {
+    margin: 3px;
+    padding: 5px;
+    max-width: 98%;
+  }
+.container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 400px 400px;
+    grid-template-areas:
+      "esquerda direita"
+      "esquerda direita"
+      "footer footer";
+      grid-gap: 2px;
+  }
+  .esquerda {
+    border-radius: 10px;
+    grid-area: esquerda;
+  }
+  img{
+    max-width: 100%;
+  }
+ 
+  .direita {
+    border-radius: 10px;
+    grid-area: direita;
+    background-color: #007bff;
+    text-align: center;
+  }
+  .footer{
+      grid-area: footer;
+      background-color: aqua;
+      text-align: right;
+  }
+
+  .subgrid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 50px 50px 50px);
+    grid-template-rows: 50px 50px 50px);
+    grid-template-areas:  ". . ."
+                        ". login ."
+                          ". . .";
+  }
+  .login{
+        width: 200px;
+        height: 200px;
+        background-color:blue;
+        text-align: center;
+        grid-area: login;
+        border-radius: 5px;
+        grid-gap: 2px;
+        }
+                      
+  a{
+    border: 3px solid aqua;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 6px 5px;
+  }
+  
